@@ -18,6 +18,8 @@ defmodule PortfolioWeb.Router do
     pipe_through :browser
 
     live "/", HomeLive
+    live "/writings", WritingLive
+    live "/writings/gsoc-proposal", WritingLive.ProposalLive
   end
 
   # Other scopes may use custom stacks.
