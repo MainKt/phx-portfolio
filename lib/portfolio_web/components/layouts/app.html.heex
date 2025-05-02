@@ -1,3 +1,26 @@
+<header>
+  <h1>{assigns[:page_heading] || "How??!!"}</h1>
+  <nav>
+    <.link navigate={~p"/"}>About</.link>
+    / <.link navigate={~p"/writings"}>Writings</.link>
+    / <.link href="https://github.com/MainKt">GitHub</.link>
+  </nav>
+</header>
+
 <main>
   {@inner_content}
 </main>
+
+<hr />
+<footer>
+  <blockquote>
+    <p>
+      ♡︎ Made with <a href="https://elixir-lang.org/" target="_blank" rel="noopener noreferrer">Elixir</a>, <a
+        href="https://phoenixframework.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Phoenix</a>,
+      and <a href="https://newcss.net/" target="_blank" rel="noopener noreferrer">new.css</a>.
+    </p>
+  </blockquote>
+</footer>
