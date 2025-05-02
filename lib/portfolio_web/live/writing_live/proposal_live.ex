@@ -20,24 +20,41 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       }
     </style>
 
-    <h2>Contents</h2>
-    <div>FreeBSD GSoC 2025 Proposal <span style="display: inline-block;"></span> ⁠1</div>
-    <div>1.General Information <span style="display: inline-block;"></span> ⁠1</div>
-    <div>1.1.Biography <span style="display: inline-block;"></span> ⁠1</div>
-    <div>1.2.Mentors <span style="display: inline-block;"></span> ⁠1</div>
-    <div>
-      2.WiFi and Network Management CLI/TUI Utility <span style="display: inline-block;"></span> ⁠1
-    </div>
-    <div>2.1.Project Description <span style="display: inline-block;"></span> ⁠1</div>
-    <div>2.1.1.Technical Approach <span style="display: inline-block;"></span> ⁠1</div>
-    <div>2.1.1.1.Base features <span style="display: inline-block;"></span> ⁠1</div>
-    <div>2.1.1.2.The TUI <span style="display: inline-block;"></span> ⁠1</div>
-    <div>2.1.2.Significance for FreeBSD <span style="display: inline-block;"></span> ⁠1</div>
-    <div>2.2.Deliverables <span style="display: inline-block;"></span> ⁠1</div>
-    <div>2.3.Test Plan <span style="display: inline-block;"></span> ⁠1</div>
-    <div>2.4.Project Schedule <span style="display: inline-block;"></span> ⁠1</div>
+    <nav class="table-of-contents">
+      <h2>Contents</h2>
+      <ol class="toc-list" style="list-style-type: none;">
+        <li>
+          <a href="#general-information">1. General Information</a>
+          <ol style="list-style-type: none;">
+            <li><a href="#biography">1.1. Biography</a></li>
+            <li><a href="#mentors">1.2. Mentors</a></li>
+          </ol>
+        </li>
+        <li>
+          <a href="#wifi-utility">2. WiFi and Network Management CLI/TUI Utility</a>
+          <ol style="list-style-type: none;">
+            <li>
+              <a href="#project-description">2.1. Project Description</a>
+              <ol style="list-style-type: none;">
+                <li>
+                  <a href="#technical-approach">2.1.1. Technical Approach</a>
+                  <ol style="list-style-type: none;">
+                    <li><a href="#base-features">2.1.1.1. Base features</a></li>
+                    <li><a href="#tui">2.1.1.2. The TUI</a></li>
+                  </ol>
+                </li>
+                <li><a href="#significance">2.1.2. Significance for FreeBSD</a></li>
+              </ol>
+            </li>
+            <li><a href="#deliverables">2.2. Deliverables</a></li>
+            <li><a href="#test-plan">2.3. Test Plan</a></li>
+            <li><a href="#project-schedule">2.4. Project Schedule</a></li>
+          </ol>
+        </li>
+      </ol>
+    </nav>
 
-    <h2>1. General Information</h2>
+    <h2 id="general-information">1. General Information</h2>
     <table>
       <tr>
         <td>Name</td>
@@ -45,11 +62,16 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       </tr>
       <tr>
         <td>Email</td>
-        <td><a href="mailto:muhammad.saheed.iam@gmail.com">muhammad.saheed.iam@gmail.com</a></td>
+        <td>
+          <a href="mailto:muhammad.saheed.iam AT gmail DOT
+        com">
+            muhammad.saheed.iam AT gmail DOT com
+          </a>
+        </td>
       </tr>
       <tr>
         <td>Phone</td>
-        <td><a href="tel:+91 7892413750">+91 7892413750</a></td>
+        <td><a href="tel:+12 1234567890">[REDACTED]</a></td>
       </tr>
       <tr>
         <td>IRC</td>
@@ -78,7 +100,7 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       I will stay in regular contact with my mentors and the FreeBSD community over mailing lists, IRC and discord. and I'll aim to provide a day-by-day schedule before the program starts.
     </p>
 
-    <h3>1.1. Biography</h3>
+    <h3 id="biography">1.1. Biography</h3>
     <p>
       I am part of <code>The sceptix club</code>
       in my college; it's a student club promoting Linux and FOSS. In my free time, I love to rice and optimize my workflow with vim, window managers and learning various CLIs but maybe it's wise to not spend too much time ricing :D. I like systems programming and building low level stuff.
@@ -95,13 +117,13 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       in C and have been trying to build a TUI library in C based on <code>libvaxis</code>, <a href="https://github.com/MainKt/shinsentui.git">shinsentui</a>, it's still very early though. I have read the style(9) and have tried to follow it in my code.
     </p>
 
-    <h3>1.2. Mentors</h3>
+    <h3 id="mentors">1.2. Mentors</h3>
     <p>
       Getz Mikalsen will be the mentor and Aymeric Wibo will the co-mentor. We have discussed the project on IRC and mail
     </p>
 
-    <h2>2. WiFi and Network Management CLI/TUI Utility</h2>
-    <h3>2.1. Project Description</h3>
+    <h2 id="wifi-utility">2. WiFi and Network Management CLI/TUI Utility</h2>
+    <h3 id="project-description">2.1. Project Description</h3>
     <p>
       The project aims to build a CLI with a clean looking TUI in C for easier WiFi and Network Management on FreeBSD. The project will try to avoid unnecessary dependencies so that it's possible to add it to the FreeBSD base in the future. I've built a simple CLI utility called
       <code>wutil</code>
@@ -122,8 +144,8 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       way.
     </p>
 
-    <h4>2.1.1. Technical Approach</h4>
-    <h5>2.1.1.1. Base features</h5>
+    <h4 id="technical-approach">2.1.1. Technical Approach</h4>
+    <h5 id="base-features">2.1.1.1. Base features</h5>
     <dl>
       <dt>Listing network interfaces and their status</dt>
       <dd></dd>
@@ -240,7 +262,7 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       We will be handling operations which require root like <code>ifconfig</code>, that is to fail the operation and handle the errors if possible.
     </p>
 
-    <h5>2.1.1.2. The TUI</h5>
+    <h5 id="tui">2.1.1.2. The TUI</h5>
     <p>
       We will be using <code>termios</code>
       to put the terminal in non-canonical input mode and using control sequences, switch to an alternative buffer to draw the UI. The
@@ -252,7 +274,7 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       file descriptor and buffer the input for parsing. On exit, we will restore the terminal state as it was before opening the TUI. The TUI will provide all the above listed base features and will try to mimic <code>nmtui</code>'s functionalities on linux but much more cleaner.
     </p>
 
-    <h4>2.1.2. Significance for FreeBSD</h4>
+    <h4 id="significance">2.1.2. Significance for FreeBSD</h4>
     <p>
       A network management utility would be very helpful for everyday desktop and laptop users. Extracting the wireless interface related parts from
       <code>ifconfig</code>
@@ -265,8 +287,8 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
     <p>
       I am committed to becoming a long-term FreeBSD contributor, actively maintaining the contributed code and I wish to contribute drivers and even more utilities to make FreeBSD better on my main machine, It has issues like poweroff on lid close, and hope this project will be a great starting point.
     </p>
-    
-    <h3>2.2. Deliverables</h3>
+
+    <h3 id="deliverables">2.2. Deliverables</h3>
     <p>Before the mid-term evaluation</p>
     <ul>
       <li>
@@ -307,12 +329,12 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       <li>Getting the utilities into the base system</li>
     </ul>
 
-    <h3>2.3. Test Plan</h3>
+    <h3 id="test-plan">2.3. Test Plan</h3>
     <p>
       As it is a WiFi utility it would be difficult to mock its functionality in code, but I will make sure to write unit tests wherever appropriate.
     </p>
 
-    <h3>2.4. Project Schedule</h3>
+    <h3 id="project-schedule">2.4. Project Schedule</h3>
     <p>170 hours are allocated for the project as per the GSOC guidelines for a medium project.</p>
     <p>May 8 - June 1 Community bonding</p>
     <p>June 2 Coding starts</p>
