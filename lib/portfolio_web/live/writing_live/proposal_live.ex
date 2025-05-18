@@ -138,9 +138,7 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       But the GSoC project will aim to build a better CLI that makes use of <code>libfconfig</code>
       and possibly extend <code>libfconfig</code>
       with lacking features necessary to implement the functionalities without shell calling <code>ifconfig</code>. This utility will also include a REPL interface like <code>iwctl</code>. We will be avoiding ncurses and using terminal raw mode and escape sequences for building the TUI,
-      <a href="https://zig.news/lhp/want-to-create-a-tui-application-the-basics-of-uncooked-terminal-io-17gm">
-        The "Uncooked" Terminal IO
-      </a>
+      <a href="https://zig.news/lhp/want-to-create-a-tui-application-the-basics-of-uncooked-terminal-io-17gm">The "Uncooked" Terminal IO</a>
       way.
     </p>
 
@@ -180,9 +178,7 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
       call. <code>ifconfig</code>
       does this internally, this should be extracted in <code>libifconfig</code>
       as a small helper function. See
-      <a href="https://cgit.freebsd.org/src/tree/sbin/ifconfig/ifconfig.c#n2071">
-        <code>/usr/src/sbin/ifconfig/ifconfig.c:2071 basic_cmds</code>
-      </a>
+      <a href="https://cgit.freebsd.org/src/tree/sbin/ifconfig/ifconfig.c#n2071"><code>/usr/src/sbin/ifconfig/ifconfig.c:2071 basic_cmds</code></a>
       and <a href="https://cgit.freebsd.org/src/tree/sbin/ifconfig/ifconfig.c#n1418"><code>/usr/src/sbin/ifconfig/ifconfig.c:1418 setiffags(...)</code></a>.
     </p>
     <dl>
@@ -192,9 +188,7 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
     <p>
       <code>libifconfig</code>
       currently doesn't have a way to scan for wireless networks but
-      <a href="https://cgit.freebsd.org/src/tree/sbin/ifconfig/ifieee80211.c#n3745">
-        <code>/usr/src/sbin/ifconfig/ifieee80211.c:3745 ifconfig</code>
-      </a>
+      <a href="https://cgit.freebsd.org/src/tree/sbin/ifconfig/ifieee80211.c#n3745"><code>/usr/src/sbin/ifconfig/ifieee80211.c:3745 ifconfig</code></a>
       uses <code>lib80211_get80211len</code>
       from <code>lib80211/lib80211_ioctl.h</code>
       which is a wrapper around <code>SIOCG80211</code> <code>ioctl(...)</code>
@@ -249,9 +243,7 @@ defmodule PortfolioWeb.WritingLive.ProposalLive do
     </dl>
     <p>
       We can provide option to generate legitimate MAC address for both LAN and WLAN with OUI first three octets like how it's done in
-      <a href="https://github.com/vermaden/scripts/blob/master/network.sh#L121">
-        <code>network.sh</code>
-      </a>
+      <a href="https://github.com/vermaden/scripts/blob/master/network.sh#L121"><code>network.sh</code></a>
       by vermaden.
     </p>
     <p>
