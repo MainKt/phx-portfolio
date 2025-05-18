@@ -1,8 +1,8 @@
-@import url("/assets/terminess.css");
+@import url("/assets/inconsolata.css");
 
 :root {
-	--nc-font-sans: 'Terminess', monospace;
-	--nc-font-mono: 'Terminess', monospace;
+	--nc-font-sans: 'Inconsolata', monospace;
+	--nc-font-mono: 'Inconsolata', monospace;
 	--nc-tx-1: #FFFFFF;
 	--nc-tx-2: #EEEEEE;
 	--nc-bg-1: #000000;
