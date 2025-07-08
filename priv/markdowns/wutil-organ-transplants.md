@@ -30,7 +30,7 @@ that provides programmatic access to the functionality offered by ifconfig(8).
 I used `net/libpfctl` port as a reference, which is also an internal library.
 Currently, `libifconfig` can't be made public,
 as its interface isn't stable and making it public would require
-guarateeing a stable ABI. I plan to link libifconfig from this port,
+guaranteeing a stable ABI. I plan to link libifconfig from this port,
 when creating a port for `wutil`.
 
 ### Retrieving Network Interface Details
@@ -44,7 +44,7 @@ callback functions though (ᵕ—ᴗ—).
 
 ### Enabling/Disabling Network Interfaces.
 `NetworkMgr` and even `wutil` used to directly call `ifconfig IFACE [up|down]`
-to toggle interface state. I tried to use `rtnetlink(4)` with with `RTM_GETLINK`
+to toggle interface state. I tried to use `rtnetlink(4)` with `RTM_GETLINK`
 and `RTM_NEWLINK` to get and flip the `IFF_UP` flag of the interface,
 but the netlink message would succeed and nothing would change in the interface
 (it even froze my PC when I tried to send a message with `ifi_change` set (╥﹏╥)).
@@ -72,7 +72,7 @@ I fully switched to `libwpa_client` to connect/disconnect and configure key_mgmt
 on WiFi networks. Before I used to manually edit the `wpa_supplicant.conf` but
 now I use `SAVE_CONFIG` command (with `update_config=1`) on `wpa_supplicant`'s
 ctrl_interface, which makes `wpa_supplicant` update the config nicely 
-on it's own. The user needs to be in the `wheel` group
+on its own. The user needs to be in the `wheel` group
 by default to use ctrl_interface commands.
 
 ### Configuring Network Interfaces
