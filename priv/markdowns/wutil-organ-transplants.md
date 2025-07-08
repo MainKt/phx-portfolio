@@ -101,7 +101,7 @@ generate `compile_commands.json` with `WARNS=4` and `CFLAGS`/`LDFLAGS` to set
 include paths and sanitizers.
 
 I also got rid of all the string utility functions I had for parsing outputs of
-very commands. Even removed lots of code that became redundant with switch from
+shell commands. Even removed lots of code that became redundant with switch from
 shell calling other programs.
 
 ## What's next?
