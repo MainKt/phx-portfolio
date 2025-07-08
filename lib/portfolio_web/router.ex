@@ -20,6 +20,7 @@ defmodule PortfolioWeb.Router do
     live "/", HomeLive
     live "/writings", WritingLive
     live "/writings/gsoc-proposal", WritingLive.ProposalLive
+    live "/writings/wutil-organ-transplants", WritingLive.WutilLive
   end
 
   # Other scopes may use custom stacks.

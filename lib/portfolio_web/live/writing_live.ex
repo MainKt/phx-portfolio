@@ -14,11 +14,20 @@ defmodule PortfolioWeb.WritingLive do
     ~H"""
     <section id="writings">
       <article>
-        <h3>
-          <.link navigate="/writings/gsoc-proposal">
+        <h2>
+          <.link navigate={~p"/writings/wutil-organ-transplants"}>
+            [GSoC] wutil with libifconfig and libwpa_client
+          </.link>
+        </h2>
+        <p>After some organ transplants, <code>wutil</code> no longer uses any
+          shell calls</p>
+      </article>
+      <article>
+        <h2>
+          <.link navigate={~p"/writings/gsoc-proposal"}>
             FreeBSD WiFi Management Utility Proposal
           </.link>
-        </h3>
+        </h2>
         <p>My GSoC proposal for FreeBSD WiFi Management Utility project</p>
       </article>
     </section>
