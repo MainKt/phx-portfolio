@@ -12,10 +12,10 @@ like `NetworkMgr`.
 
 Though `wutil` is in C, I initially followed `NetworkMgr`'s
 way of directly calling `ifconfig(8)`, `wpa_supplicant(8)`, `service(8)`
-to restart/start/stop services like `dhclient(8)`, `netif`, `routing`, etc with
+(to start/stop/restart services like `dhclient(8)`, `netif`, `routing`), etc with
 `system(3)` (`system(3)` is not secure and is bad practice (╥﹏╥)),
 and also manually editing `wpa_supplicant.conf(5)` for network configuration,
-`rc.conf(5)` with `sysrc(8)` calls for IP/netmask, gateway etc,
+`rc.conf(5)` with `sysrc(8)` calls for IP/netmask/gateway,
 and `resolv.conf` for DNS nameservers. This version of wutil is available
 in [`v0.0.1`](https://github.com/MainKt/wutil/tree/v0.0.1) tag.
 
