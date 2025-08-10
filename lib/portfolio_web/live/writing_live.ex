@@ -15,6 +15,15 @@ defmodule PortfolioWeb.WritingLive do
     <section id="writings">
       <article>
         <h2>
+          <.link navigate={~p"/writings/wutui"}>
+            Cooking wutui on an Uncooked Terminal
+          </.link>
+        </h2>
+        <p>Updates on <code>wutui</code>, the TUI for <code>wutil</code></p>
+      </article>
+
+      <article>
+        <h2>
           <.link navigate={~p"/writings/wutil-organ-transplants"}>
             [GSoC] wutil with libifconfig and libwpa_client
           </.link>

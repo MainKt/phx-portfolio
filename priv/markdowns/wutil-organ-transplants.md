@@ -1,5 +1,5 @@
 ## In the beginning
-During the GSoC proposal week,
+During the GSoC proposal period,
 I created [`wutil`](https://github.com/MainKt/wutil),
 a WiFi and network management utility,
 along the lines of GhostBSD's `NetworkMgr`.
