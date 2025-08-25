@@ -19,7 +19,7 @@ defmodule PortfolioWeb.WritingLive do
             [GSoC] rtnetlink and libifconfig
           </.link>
         </h2>
-        <p>Updates on <code>wutui</code>, the TUI for <code>wutil</code></p>
+        <p>My adventures in FreeBSD base and some updates on <code>wutil(8)</code></p>
       </article>
       <article>
         <h2>
