@@ -10,7 +10,7 @@ defmodule PortfolioWeb.WritingLive.NetlinkLive do
     {:ok, socket}
   end
 
-  def md(file_path) do
+  defmacro md(file_path) do
     file_path
     |> Earmark.from_file!()
     |> Phoenix.HTML.raw()
