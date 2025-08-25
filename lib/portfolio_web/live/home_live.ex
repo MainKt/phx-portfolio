@@ -35,7 +35,7 @@ defmodule PortfolioWeb.HomeLive do
       <p>
         I also love low-level systems programming and enjoy building and
         rewriting tools that I find fun in Zig and Rust.
-        I'm also a fan of Erlang and it's concurrency model. d(^U^)z
+        I'm a fan of Erlang and it's concurrency model. d(^U^)
       </p>
     </section>
 
@@ -45,7 +45,7 @@ defmodule PortfolioWeb.HomeLive do
       <dl>
         <dt>Email</dt>
         <dd>
-          <a href="mailto:muhammad.saheed.iam AT gmail DOT com">
+          <a href="mailto:muhammad.saheed.iam@gmail.com">
             muhammad.saheed.iam AT gmail DOT com
           </a>
         </dd>

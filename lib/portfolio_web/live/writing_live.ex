@@ -15,13 +15,20 @@ defmodule PortfolioWeb.WritingLive do
     <section id="writings">
       <article>
         <h2>
-          <.link navigate={~p"/writings/wutui"}>
-            Cooking wutui on an Uncooked Terminal
+          <.link navigate={~p"/writings/netlink"}>
+            [GSoC] rtnetlink and libifconfig
           </.link>
         </h2>
         <p>Updates on <code>wutui</code>, the TUI for <code>wutil</code></p>
       </article>
-
+      <article>
+        <h2>
+          <.link navigate={~p"/writings/wutui"}>
+            [GSoC] Cooking wutui on an Uncooked Terminal
+          </.link>
+        </h2>
+        <p>Updates on <code>wutui</code>, the TUI for <code>wutil</code></p>
+      </article>
       <article>
         <h2>
           <.link navigate={~p"/writings/wutil-organ-transplants"}>
@@ -34,7 +41,7 @@ defmodule PortfolioWeb.WritingLive do
       <article>
         <h2>
           <.link navigate={~p"/writings/gsoc-proposal"}>
-            FreeBSD WiFi Management Utility Proposal
+            [GSoC] FreeBSD WiFi Management Utility Proposal
           </.link>
         </h2>
         <p>My GSoC proposal for FreeBSD WiFi Management Utility project</p>

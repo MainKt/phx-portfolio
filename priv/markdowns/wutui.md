@@ -6,14 +6,15 @@ managing known networks, automatic wpa_supplicant config update etc. The TUI,
 which was built as a proof-of-concept for my GSoC proposal along the lines of 
 [The Basics of "Uncooked" Terminal IO](https://zig.news/lhp/want-to-create-a-tui-application-the-basics-of-uncooked-terminal-io-17gm),
 though pretty could only display scan results and 
-network interfaces info. So it was finally time to make all wutil
+network interfaces info. So it was finally time to make all `wutil`
 functionalities available in the TUI, `wutui` (It sounds better when pronounced 
 *What-You-I* IMHO („ᵕᴗᵕ„)),
 
 ## Getting the Terminal Raw
 So normally a terminal is in a cooked state and does all the nice output and
 input processing on every read and write on the tty,
-like CTRL-C and CTRL-Z keybindings send a SIGINT and a SIGTSTP respectively,
+like `CTRL-C` and `CTRL-Z` keybindings send a `SIGINT` and a `SIGTSTP` 
+respectively,
 carefully waiting for an ENTER key to read a line etc. But when building a TUI,
 they must be disabled, we rather want a raw fresh uncooked tty,
 which we can cook ourselves (no pun intended). We can do this by fetching and
