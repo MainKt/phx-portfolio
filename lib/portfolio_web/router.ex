@@ -17,6 +17,8 @@ defmodule PortfolioWeb.Router do
   scope "/", PortfolioWeb do
     pipe_through :browser
 
+    get "/resume", ResumeController, :index
+
     live "/", HomeLive
     live "/writings", WritingLive
     live "/writings/gsoc-proposal", WritingLive.ProposalLive
